@@ -1,0 +1,84 @@
+KCM - Morning - Secondary   Data Not added due to exception 
+No database provider has been configured for this DbContext. A provider can be configured by overriding the 'DbContext.OnConfiguring' method or by using 'AddDbContext' on the application service provider. If 'AddDbContext' is used, then also ensure that your DbContext type accepts a DbContextOptions<TContext> object in its constructor and passes it to the base constructor for DbContext.
+KCM - Morning - Secondary   Data Added to Database
+
+KCM - Evening - Secondary   Data Added to Database
+
+PMS - Morning - Secondary   Data Added to Database
+
+SSCA - Morning - Primary   Data Added to Database
+
+PMS - Morning - Secondary   Data Added to Database
+
+KCM - Evening - Secondary   Data Added to Database
+
+SSCAData Fetched from Database
+
+KCMData Fetched from Database
+
+PMSData Fetched from Database
+
+KCMData Fetched from Database
+
+KCMData Fetched from Database
+
+KidZee - Morning - Primary   Data Added to Database
+
+KCMData Fetched from Database
+
+KVPS - Morning - Secondary   Data Added to Database
+
+KVPS - Evening - Secondary   Data Added to Database
+
+KVPSData Fetched from Database
+
+KVPSData Fetched from Database
+
+KidZeeData Fetched from Database
+
+KCMData Fetched from Database
+
+KVPSData Fetched from Database
+
+KCMData Fetched from Database
+
+KCMData Fetched from Database
+
+SchoolManagementEntity.SchoolEntityData Fetched from Database
+
+SchoolManagementEntity.SchoolEntityData Fetched from Database
+
+SchoolManagementEntity.SchoolEntityData Fetched from Database
+
+KCMData Fetched from Database
+
+KidZeeData Fetched from Database
+
+KCMData Fetched from Database
+
+KCMData Fetched from Database
+
+KidZeeData Fetched from Database
+
+KCMData Fetched from Database
+
+KVPSData Fetched from Database
+
+SchoolManagementEntity.SchoolEntityData Fetched from Database
+
+KVPSData Fetched from Database
+
+SchoolManagementEntity.SchoolEntityData Fetched from Database
+
+SchoolManagementEntity.SchoolEntityData Fetched from Database
+
+KVPSData Fetched from Database
+
+SchoolManagementEntity.SchoolEntityData Fetched from Database
+
+KVPSData Fetched from Database
+
+PMSData Fetched from Database
+
+KidZeeData Fetched from Database
+

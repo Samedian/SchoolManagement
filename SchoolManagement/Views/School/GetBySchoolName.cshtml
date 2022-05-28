@@ -1,0 +1,66 @@
+﻿@Html.BeginForm()
+{
+<link rel="stylesheet" href="~/css/GetByName.css" />
+
+@if (ViewBag.Error == null)
+{
+    @foreach (var item in ViewBag.Data)
+    {
+        <table id="tableData">
+            <tr>
+                <td id="col">
+                    School Name
+                </td>
+                <td>
+                    @item.SchoolName
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Principal Name
+                </td>
+                <td>
+                    @item.PrincipalName
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    School Type
+                </td>
+                <td>
+                    @item.SchoolType
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    School Shift
+                </td>
+                <td>
+                    @item.SchoolShift
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Date of Inaugration
+                </td>
+                <td>
+                    @item.DateOfInaugration
+                </td>
+            </tr>
+        </table>
+
+        <br />
+        <br />
+
+    }
+    @Html.ActionLink("Back to Menu", "Index");
+
+}else
+{
+    <p>Some Error Occured @ViewBag.Error</p>
+}
+}

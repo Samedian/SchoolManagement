@@ -1,0 +1,72 @@
+﻿@Html.BeginForm()
+{
+<head>
+    <link rel="stylesheet" href="~/css/Save.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="~/js/Validation.js"></script>
+</head>
+@Html.ActionLink("Back to Menu", "Index");
+
+@if (ViewBag.Error == null)
+{
+    <div class="data">
+        <form class="formData">
+
+            <label id="SchoolName">School Name :</label>
+
+            <input type="text" id="nameData" name="SchoolName" required />
+            <br />
+            <br />
+
+            <label id="PrincipalName">Principal Name :</label>
+
+            <input type="text" id="nameData" name="PrincipalName" required />
+
+            <br />
+            <br />
+
+            <label for="SchoolType">School Type :</label>
+            <input type="radio" name="SchoolType" id="Primary" value="Primary" required />
+            <label for="Primary">Primary</label>
+            <br />
+            <input type="radio" name="SchoolType" id="Secondary" value="Secondary" />
+            <label for="Secondary">Secondary</label>
+
+            <br />
+            <br />
+
+            <label for="SchoolShift">School Shift :</label>
+            <select id="SchoolShift" name="SchoolShift" required>
+                <option disabled selected> -- select an option -- </option>
+                <option value="Morning">
+                    Morning
+                </option>
+                <option value="Evening">
+                    Evening
+                </option>
+                <option value="Night">
+                    Night
+                </option>
+            </select>
+
+            <br />
+            <br />
+            <label for="DateOfInaugration">Date of Inaugration</label>
+            <input type="date" id="DateOfInaugration" name="DateOfInaugration" required />
+
+            <br />
+            <br />
+            <input type="submit" value="Submit" name="Submit" class="btn btn-default" ) />
+            <input type="submit" value="Cancel" name="Cancel" class="btn btn-default" ) />
+
+
+
+        </form>
+    </div>
+}
+else
+{
+    <p> Some Error Occured <hr /> @ViewBag.Error</p>
+}
+
+}

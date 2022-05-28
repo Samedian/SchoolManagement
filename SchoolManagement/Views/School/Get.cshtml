@@ -1,0 +1,57 @@
+﻿@Html.BeginForm()
+{
+<link rel="stylesheet" href="~/css/Get.css" />
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        class School {
+            constructor(data) {
+                this.data = data;
+            }
+            printPrincipal() {
+                document.getElementById("selected").innerHTML = "You selected "+ this.data;
+            }
+
+        }
+
+        $(document).ready(function () {
+            $("#print").change(function () {
+                var data = $(this).val();
+
+                let school = new School(data);
+                school.printPrincipal();
+            });
+        });
+    </script>
+</head>
+
+@if (ViewBag.Error == null)
+{
+    <div class="data">
+
+        <form>
+            <label for="SchoolName">School Name :</label>
+            <select id="print" name="SchoolName" required >
+                <option disabled selected> -- select an option -- </option>
+                @foreach (var item in ViewBag.Data)
+                {
+                    <option value="@item.SchoolName">
+                        @item.SchoolName
+                    </option>
+                }
+            </select>
+            <p id="selected"></p>
+            <br />
+            <br />
+
+            <input type="submit" value="Submit" name="Submit"  class="btn btn-default" ) />
+            <input type="submit" value="Cancel" name="Cancel" class="btn btn-default" ) />
+        </form>
+    </div>
+}
+else
+{
+    <p>Error occured @ViewBag.Error</p>
+}
+}
